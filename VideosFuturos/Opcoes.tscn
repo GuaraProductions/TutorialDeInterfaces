@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://by7x888qi6omn"]
+
+[node name="Opcoes" type="MarginContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 55
+theme_override_constants/margin_top = 55
+theme_override_constants/margin_right = 55
+theme_override_constants/margin_bottom = 55
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 2
+current_tab = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+metadata/_tab_index = 0
+
+[node name="GridContainer" type="GridContainer" parent="TabContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 25
+theme_override_constants/v_separation = 25
+columns = 2
+
+[node name="Label2" type="Label" parent="TabContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+text = "aaaaa"
+
+[node name="OptionButton" type="OptionButton" parent="TabContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+selected = 0
+item_count = 3
+popup/item_0/text = "Teste"
+popup/item_1/text = "Teste1"
+popup/item_1/id = 1
+popup/item_2/text = "Teste2"
+popup/item_2/id = 2
+
+[node name="Label" type="Label" parent="TabContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+text = "aaaaaaaaaa"
+
+[node name="OptionButton2" type="OptionButton" parent="TabContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+selected = 0
+item_count = 3
+popup/item_0/text = "Teste"
+popup/item_1/text = "Teste1"
+popup/item_1/id = 1
+popup/item_2/text = "Teste2"
+popup/item_2/id = 2
+
+[node name="Label3" type="Label" parent="TabContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+text = "aaaaaaaaaa"
+
+[node name="OptionButton3" type="OptionButton" parent="TabContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+selected = 0
+item_count = 3
+popup/item_0/text = "Teste"
+popup/item_1/text = "Teste1"
+popup/item_1/id = 1
+popup/item_2/text = "Teste2"
+popup/item_2/id = 2
+
+[node name="Label4" type="Label" parent="TabContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+text = "aaaaaaaaaa"
+
+[node name="OptionButton4" type="OptionButton" parent="TabContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+selected = 0
+item_count = 3
+popup/item_0/text = "Teste"
+popup/item_1/text = "Teste1"
+popup/item_1/id = 1
+popup/item_2/text = "Teste2"
+popup/item_2/id = 2
+
+[node name="Label5" type="Label" parent="TabContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+text = "aaaaaaaaaa"
+
+[node name="OptionButton5" type="OptionButton" parent="TabContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+selected = 0
+item_count = 3
+popup/item_0/text = "Teste"
+popup/item_1/text = "Teste1"
+popup/item_1/id = 1
+popup/item_2/text = "Teste2"
+popup/item_2/id = 2
+
+[node name="Label6" type="Label" parent="TabContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+text = "aaaaaaaaaa"
+
+[node name="OptionButton6" type="OptionButton" parent="TabContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+selected = 0
+item_count = 3
+popup/item_0/text = "Teste"
+popup/item_1/text = "Teste1"
+popup/item_1/id = 1
+popup/item_2/text = "Teste2"
+popup/item_2/id = 2
