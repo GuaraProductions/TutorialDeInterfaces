@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cckxkvu1uujl2"]
 
-[ext_resource type="Script" path="res://VideosFuturos/Creditos.gd" id="1_f2qii"]
+[ext_resource type="Script" path="res://Video-3-Creditos/Creditos.gd" id="1_kwuv3"]
 
 [node name="Control" type="ColorRect"]
 anchors_preset = 15
@@ -9,7 +9,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
-script = ExtResource("1_f2qii")
+script = ExtResource("1_kwuv3")
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 layout_mode = 1

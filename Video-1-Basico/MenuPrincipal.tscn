@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bbicbxwkxikc4" path="res://assets/fundo-com-repeticao.jpg" id="1_40lva"]
 [ext_resource type="FontFile" uid="uid://dwdow6rsf5gx1" path="res://assets/Fonts/upheavtt.ttf" id="1_x2mws"]
-[ext_resource type="PackedScene" uid="uid://b6i1taytcwf0n" path="res://MeuBotaoCustomizado.tscn" id="2_wse08"]
+[ext_resource type="PackedScene" uid="uid://b6i1taytcwf0n" path="res://Video-1-Basico/MeuBotaoCustomizado.tscn" id="2_wse08"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_5cjtu"]
 font = ExtResource("1_x2mws")
