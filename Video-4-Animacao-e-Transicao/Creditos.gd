@@ -1,12 +1,10 @@
-extends ColorRect
-
-@onready var credits_scroll : ScrollContainer = $ScrollContainer
+extends ScrollContainer
 
 func _ready() -> void:
 	var tween = create_tween()
 	
 	tween.tween_property(
-		credits_scroll,
+		self,
 		"scroll_vertical",
 		3000,
 		10.0

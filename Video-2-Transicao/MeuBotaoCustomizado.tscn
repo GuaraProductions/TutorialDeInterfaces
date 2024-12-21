@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://dk0vwl6k2ty6g"]
+
+[ext_resource type="FontFile" uid="uid://dwdow6rsf5gx1" path="res://assets/Fonts/upheavtt.ttf" id="1_bku6p"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qvekd"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0.873743, 0.472294, 0.353908, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+shadow_color = Color(0, 0, 0, 0.2)
+shadow_size = 5
+shadow_offset = Vector2(5, 5)
+
+[node name="Button" type="Button"]
+offset_right = 97.0
+offset_bottom = 58.0
+theme_override_fonts/font = ExtResource("1_bku6p")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_qvekd")
+text = "Jogar"

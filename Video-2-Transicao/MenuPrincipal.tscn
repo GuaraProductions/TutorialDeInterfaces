@@ -1,0 +1,76 @@
+[gd_scene load_steps=7 format=3 uid="uid://6olx1kokcduu"]
+
+[ext_resource type="Texture2D" uid="uid://bbicbxwkxikc4" path="res://assets/fundo-com-repeticao.jpg" id="1_2r3vd"]
+[ext_resource type="Script" path="res://Video-2-Transicao/MenuPrincipal.gd" id="2_tcs1t"]
+[ext_resource type="FontFile" uid="uid://dwdow6rsf5gx1" path="res://assets/Fonts/upheavtt.ttf" id="2_txgyb"]
+[ext_resource type="PackedScene" uid="uid://b6i1taytcwf0n" path="res://Video-1-Basico/MeuBotaoCustomizado.tscn" id="3_31783"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_5cjtu"]
+font = ExtResource("2_txgyb")
+font_size = 64
+font_color = Color(1, 0.603922, 1, 1)
+shadow_size = 15
+shadow_color = Color(0.109804, 0.109804, 0.109804, 0.403922)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1xgrp"]
+content_margin_left = 15.0
+content_margin_top = 15.0
+content_margin_right = 15.0
+content_margin_bottom = 15.0
+bg_color = Color(0.160784, 0.160784, 0.160784, 0.647059)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_size = 1
+shadow_offset = Vector2(5, 5)
+
+[node name="MenuPrincipal" type="TextureRect"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_2r3vd")
+expand_mode = 2
+stretch_mode = 1
+script = ExtResource("2_tcs1t")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_top = 25
+
+[node name="Label" type="Label" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+text = "Título legal de jogo"
+label_settings = SubResource("LabelSettings_5cjtu")
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_1xgrp")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/PanelContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 25
+
+[node name="Jogar" parent="MarginContainer/PanelContainer/VBoxContainer" instance=ExtResource("3_31783")]
+layout_mode = 2
+
+[node name="Opcoes" parent="MarginContainer/PanelContainer/VBoxContainer" instance=ExtResource("3_31783")]
+layout_mode = 2
+text = "Opções"
+
+[node name="Sair" parent="MarginContainer/PanelContainer/VBoxContainer" instance=ExtResource("3_31783")]
+layout_mode = 2
+text = "Sair"

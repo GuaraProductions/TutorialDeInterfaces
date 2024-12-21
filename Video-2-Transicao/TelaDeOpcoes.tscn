@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://cbpv4wd3rhex0"]
+
+[ext_resource type="Script" path="res://Video-2-Transicao/TelaDeOpcoes.gd" id="1_56q3k"]
+[ext_resource type="PackedScene" uid="uid://b6i1taytcwf0n" path="res://Video-1-Basico/MeuBotaoCustomizado.tscn" id="1_immbg"]
+[ext_resource type="PackedScene" uid="uid://6olx1kokcduu" path="res://Video-2-Transicao/MenuPrincipal.tscn" id="2_m81v0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kk7jx"]
+content_margin_left = 35.0
+content_margin_top = 35.0
+content_margin_right = 35.0
+content_margin_bottom = 35.0
+bg_color = Color(0.197937, 0.197937, 0.197937, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_qcnyy"]
+font_size = 32
+
+[node name="TelaDeOpcoes" type="PanelContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_kk7jx")
+script = ExtResource("1_56q3k")
+menu_principal = ExtResource("2_m81v0")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+text = "Tela de Opções"
+label_settings = SubResource("LabelSettings_qcnyy")
+
+[node name="MenuPrincipal" parent="." instance=ExtResource("1_immbg")]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Menu principal"
