@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://cbpv4wd3rhex0"]
 
-[ext_resource type="Script" path="res://Video-2-Transicao/TelaDeOpcoes.gd" id="1_56q3k"]
+[ext_resource type="Script" uid="uid://bgdk5c58n0gvl" path="res://Video-2-Transicao/TelaDeOpcoes.gd" id="1_56q3k"]
 [ext_resource type="PackedScene" uid="uid://b6i1taytcwf0n" path="res://Video-1-Basico/MeuBotaoCustomizado.tscn" id="1_immbg"]
 [ext_resource type="PackedScene" uid="uid://6olx1kokcduu" path="res://Video-2-Transicao/MenuPrincipal.tscn" id="2_m81v0"]
 

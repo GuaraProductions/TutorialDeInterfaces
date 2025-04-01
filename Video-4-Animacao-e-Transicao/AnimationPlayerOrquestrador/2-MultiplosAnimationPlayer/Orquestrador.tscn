@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dcew654n1p5x3"]
+
+[ext_resource type="Script" uid="uid://b2dplbpyj31sy" path="res://Video-4-Animacao-e-Transicao/AnimationPlayerOrquestrador/1-UmAnimationPlayer/Orquestrador.gd" id="1_3fj4w"]
+[ext_resource type="PackedScene" uid="uid://bhodbuvmt3k0p" path="res://Video-4-Animacao-e-Transicao/AnimationPlayerOrquestrador/2-MultiplosAnimationPlayer/Telas/TelaDeOpcoes.tscn" id="2_3fj4w"]
+[ext_resource type="PackedScene" uid="uid://b38p57p0i3ot" path="res://Video-4-Animacao-e-Transicao/AnimationPlayerOrquestrador/2-MultiplosAnimationPlayer/Telas/MenuPrincipal.tscn" id="3_pg35c"]
+
+[node name="AnimationPlayerOrquestrador" type="Node"]
+script = ExtResource("1_3fj4w")
+
+[node name="TelaDeOpcoes" parent="." instance=ExtResource("2_3fj4w")]
+
+[node name="MenuPrincipal" parent="." instance=ExtResource("3_pg35c")]
+
+[connection signal="pressed" from="TelaDeOpcoes/MenuPrincipal" to="." method="_on_menu_principal_pressed"]
+[connection signal="pressed" from="MenuPrincipal/MarginContainer/PanelContainer/VBoxContainer/Opcoes" to="." method="_on_opcoes_pressed"]
+
+[editable path="TelaDeOpcoes"]
+[editable path="MenuPrincipal"]

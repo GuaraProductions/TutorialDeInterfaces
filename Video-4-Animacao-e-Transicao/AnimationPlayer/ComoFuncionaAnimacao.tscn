@@ -1,0 +1,75 @@
+[gd_scene load_steps=8 format=3 uid="uid://cg44t2kxiqljj"]
+
+[ext_resource type="Script" uid="uid://bbo3hcbpulwor" path="res://Video-4-Animacao-e-Transicao/AnimationPlayer/como_funciona_animacao.gd" id="1_02f70"]
+[ext_resource type="Texture2D" uid="uid://wl2kg86nqhe7" path="res://icon.svg" id="1_r2yyd"]
+
+[sub_resource type="Animation" id="Animation_r2yyd"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(82, 109)]
+}
+
+[sub_resource type="Animation" id="Animation_faxru"]
+resource_name = "new_animation"
+
+[sub_resource type="Animation" id="Animation_c46qn"]
+resource_name = "new_animation_2"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(82, 109), Vector2(991, 99)]
+}
+
+[sub_resource type="Animation" id="Animation_02f70"]
+resource_name = "andar"
+length = 8.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(82, 109), Vector2(878, 97)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_aaf40"]
+_data = {
+&"RESET": SubResource("Animation_r2yyd"),
+&"andar": SubResource("Animation_02f70"),
+&"new_animation": SubResource("Animation_faxru"),
+&"new_animation_2": SubResource("Animation_c46qn")
+}
+
+[node name="ComoFuncionaAnimacao" type="Node2D"]
+script = ExtResource("1_02f70")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_aaf40")
+}
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(82, 109)
+texture = ExtResource("1_r2yyd")

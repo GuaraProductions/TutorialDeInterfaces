@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://6olx1kokcduu"]
 
 [ext_resource type="Texture2D" uid="uid://bbicbxwkxikc4" path="res://assets/fundo-com-repeticao.jpg" id="1_2r3vd"]
-[ext_resource type="Script" path="res://Video-2-Transicao/MenuPrincipal.gd" id="2_tcs1t"]
+[ext_resource type="Script" uid="uid://d0yve2ld3d875" path="res://Video-2-Transicao/MenuPrincipal.gd" id="2_tcs1t"]
 [ext_resource type="FontFile" uid="uid://dwdow6rsf5gx1" path="res://assets/Fonts/upheavtt.ttf" id="2_txgyb"]
 [ext_resource type="PackedScene" uid="uid://b6i1taytcwf0n" path="res://Video-1-Basico/MeuBotaoCustomizado.tscn" id="3_31783"]
 
